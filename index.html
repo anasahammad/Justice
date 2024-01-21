@@ -23,6 +23,8 @@
       rel="stylesheet"
     />
 
+    <!-- fontawosome cdn -->
+    <script src="https://kit.fontawesome.com/f9ad903031.js" crossorigin="anonymous"></script>
     <!-- custome tailwind css -->
     <script>
         tailwind.config = {
@@ -30,6 +32,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                baton: '#B68C5A',
               }
             }
           }
@@ -45,5 +48,46 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <!----------- header start--------------- -->
+    <header class="w-4/5 mx-auto">
+        <!-- navbar start -->
+        <nav class="flex justify-between my-4 items-center">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+           <div class="hidden lg:block md:block">
+            <ul class="flex justify-between space-x-7 font-poppins text-[#707070]">
+                <li ><a href="">Home</a></li>
+                <li><a href="">Services  <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="">Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="">Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="">Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+            </ul>
+           </div>
+            
+            <div>
+                <button class="btn bg-[#B68C5A] text-white">Free Consultation</button>
+            </div>
+          
+           
+        </nav>
+         <!-- navbar end -->
+
+         <!-- hero section start -->
+         
+         <div class="hero  w-full lg:min-h-screen my-12" style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-gradient-to-r from-[#111] to-[#11111100] w-full"></div>
+            <div class="hero-content text-center text-neutral-content ">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl lg:text-5xl font-extrabold font-eb-garamond text-white">We Provide Effective Legal Solutions</h1>
+                <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <input class="input input-bordered join-item lg:pr-[120px] lg:mr-4 mb-3" placeholder="Search your services"/>
+                <button class="btn bg-[#B68C5A] text-white border-none">Search</button>
+              </div>
+            </div>
+          </div>
+    </header>
+     <!-- ----------------header end------------ -->
+  </body>
 </html>
